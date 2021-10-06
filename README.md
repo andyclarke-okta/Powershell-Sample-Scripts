@@ -51,6 +51,9 @@ $failUpdate = "$homeFolder\Failed_UpdateUser_$timestamp.csv";
 ## Other Resources
 Some of the scripts use a Powershell library (OktaAPI.psm1) created to facilitate API features
 
+https://github.com/gabrielsroka/OktaAPI.psm1
+https://www.powershellgallery.com/packages/OktaAPI
+
 To Install on PowerShell 5:
 
 PS> Install-Module -Name OktaAPI  -Scope CurrentUser
@@ -61,7 +64,7 @@ PS> Install-Module -Name OktaAPI -Scope AllUsers -AllowClobber
 This command will install the powesrshell module in your global store found at;
 C:\Program Files\WindowsPowerShell\Modules
 
-Other sample scripts can be foud at;
+Other sample scripts can be found at;
 * https://www.powershellgallery.com/packages/CallOktaAPI
 	* CallOktaAPI.ps1 has sample code. Replace YOUR_API_TOKEN and YOUR_ORG with your values or use OktaAPISettings.ps1.
 

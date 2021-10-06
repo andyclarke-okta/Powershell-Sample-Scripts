@@ -52,6 +52,7 @@ $failUpdate = "$homeFolder\Failed_UpdateUser_$timestamp.csv";
 Some of the scripts use a Powershell library (OktaAPI.psm1) created to facilitate API features
 
 https://github.com/gabrielsroka/OktaAPI.psm1
+
 https://www.powershellgallery.com/packages/OktaAPI
 
 To Install on PowerShell 5:

@@ -8,7 +8,7 @@ These scripts are Unofficial code designed to get you started with managing your
 Powershell can be installed on Windows, Linux and macOS.
 * https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-5.1
 
-It is recommended that your Powershell envirnment is at version 5.
+It is recommended that your Powershell environment is at version 5. 
 To determine which version of PowerShell you're running, see PSVersion under `$PSVersionTable`.
 
 ## Getting Started

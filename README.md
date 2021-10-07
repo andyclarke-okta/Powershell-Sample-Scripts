@@ -1,29 +1,29 @@
-# Powershell-Sample-Scripts
+# PowerShell-Sample-Scripts
 
-## Sample Powershell scripts for Identity Management on the Okta Platform
+## Sample PowerShell scripts for Identity Management on the Okta Platform
 
-These scripts are Unofficial code designed to get you started with managing your Okta tenent via PowerShell
+These scripts are Unofficial code designed to get you started with managing your Okta tenant via PowerShell
 
 ## System Requirements
-Powershell can be installed on Windows, Linux and macOS.
-* https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-5.1
+PowerShell can be installed on Windows, Linux and macOS.
+* https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell
 
-It is recommended that your Powershell environment is at version 5. 
+It is recommended that your PowerShell environment is at least version 5. 
 To determine which version of PowerShell you're running, see PSVersion under `$PSVersionTable`.
 
 ## Getting Started
 Most of the scripts are self contained and don't require external libraries. 
 A few scripts leverage an external library. See "Other Resources". 
-You can dtermine which method works best for your needs.
+You can determine which method works best for your needs.
 
-The scripts require tht you specify;
-* Your Okta tenent; $org
-* Your Okta tenent apiToken with the proper permissions; $token
+The scripts require that you specify;
+* Your Okta tenant; $org
+* Your Okta tenant apiToken with the proper permissions; $token
 	* https://developer.okta.com/docs/guides/create-an-api-token/overview/
 * Some other information such as $groupId may be required by some scripts.
-* Scripts that process inout and/or output files may require accessible folder sctructures.
+* Scripts that process input and/or output files may require accessible folder sctructures.
 
-```json
+```powershell
 
 # Site config
 $org = "https://subdomain.oktapreview.com"
@@ -49,7 +49,7 @@ $failUpdate = "$homeFolder\Failed_UpdateUser_$timestamp.csv";
 
 
 ## Other Resources
-Some of the scripts use a Powershell library (OktaAPI.psm1) created to facilitate API features
+Some of the scripts use a PowerShell library (OktaAPI.psm1) created to facilitate API features
 
 https://github.com/gabrielsroka/OktaAPI.psm1
 
@@ -57,12 +57,16 @@ https://www.powershellgallery.com/packages/OktaAPI
 
 To Install on PowerShell 5:
 
+```
 PS> Install-Module -Name OktaAPI  -Scope CurrentUser
-This command will install the powesrshell module in your local store found at; 
+```
+This command will install the PowerShell module in your local store found at; 
 $HOME\Documents\WindowsPowerShell\Modules
 
+```
 PS> Install-Module -Name OktaAPI -Scope AllUsers -AllowClobber
-This command will install the powesrshell module in your global store found at;
+```
+This command will install the PowerShell module in your global store found at;
 C:\Program Files\WindowsPowerShell\Modules
 
 Other sample scripts can be found at;

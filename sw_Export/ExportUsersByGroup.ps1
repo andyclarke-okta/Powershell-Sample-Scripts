@@ -8,7 +8,7 @@ write-host "script start " (get-date).ToString()
 
 # Site config
 $org = "https://subdomain.oktapreview.com"
-$token="00FTs0L6e_TtBh7oWqV-xxxxxxxxxxxxxxxx"
+$token="00oZO57fOmgFZlHQy0Wxxxxxxxxxxxxxxxxxxx"
 #config home folder
 $homeFolder = "c:\\Report_Output";
 #setup output file and headers

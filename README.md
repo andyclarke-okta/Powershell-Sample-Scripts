@@ -6,22 +6,31 @@ These scripts are Unofficial code designed to get you started with managing your
 
 ## System Requirements
 Powershell can be installed on Windows, Linux and macOS.
+
+Windows users can execute version 5.1 or version 7.1. Windows Powershell ISE is compatible with version 5.1
+Linux and macOS require version 7.1
+
+Installing PowerShell on Windows, macOS or Linux use version 7
+* https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1
+
+If you want to execute PowerShell ISE on Windows use version 5
 * https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-5.1
 
-It is recommended that your Powershell environment is at version 5. 
 To determine which version of PowerShell you're running, see PSVersion under `$PSVersionTable`.
 
 ## Getting Started
 Most of the scripts are self contained and don't require external libraries. 
 A few scripts leverage an external library. See "Other Resources". 
-You can dtermine which method works best for your needs.
+You can determine which code model works best for your needs.
 
-The scripts require tht you specify;
+The scripts require that you specify;
 * Your Okta tenent; $org
 * Your Okta tenent apiToken with the proper permissions; $token
 	* https://developer.okta.com/docs/guides/create-an-api-token/overview/
 * Some other information such as $groupId may be required by some scripts.
-* Scripts that process inout and/or output files may require accessible folder sctructures.
+* Scripts that process input and/or output files may require accessible folder sctructures.
+
+Example script config
 
 ```json
 
